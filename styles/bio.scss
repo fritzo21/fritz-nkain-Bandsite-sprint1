@@ -1,1 +1,9 @@
-// @import 'navbar';
+@import "./patials/typography";
+@import "./patials/mixins";
+
+
+//Global
+
+@import "./patials/global";
+
+@import "./patials/header"

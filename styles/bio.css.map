@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"bio.css"}
+{"version":3,"sources":["patials/_typography.scss","bio.css","patials/_global.scss"],"names":[],"mappings":"AAAA;EACI,6BAAA;EACA,6IAAA;EAEA,gBAAA;EACA,kBAAA;ACAJ;ADGA;EACI,0BAAA;EACA,+IAAA;EAEA,mBAAA;EACA,eAAA;ACFJ;ADKA;EACI,0BAAA;EACA,+IAAA;EAEA,mBAAA;EACA,eAAA;ACJJ;ACfA;EACI,WAAA;ADiBJ;;ACdA;EACI,WAAA;EACA,SAAA;EACA,yCAAA;ADiBJ","file":"bio.css"}
