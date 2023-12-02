@@ -1,0 +1,32 @@
+@import 'variables';
+
+.navbar{
+    background-color: $bandsite-blk;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  &__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+}
+
+.band__logo{
+    background-color: $bandsite-blk;
+    text-decoration: none;
+    cursor: pointer;
+
+    
+}
+
+.navbar__content{
+    
+    &-links{
+        border-right: 200px;
+    }
+}
