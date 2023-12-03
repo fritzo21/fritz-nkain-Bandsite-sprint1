@@ -1,3 +1,6 @@
+@import "variables" as;
+@import "variables" as;
+@import "variables" as;
 @font-face {
   font-family: "Avenir Regular";
   src: url("../../assets/Font/AvenirNextLTPro.ttf") format("truetype"), url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
@@ -24,4 +27,214 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Avenir Regular", sans-serif;
+}
+
+.about {
+  width: 85%;
+  margin: 0 16px 40px;
+}
+.about__header {
+  font-family: "Avenir Bold";
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 5vw;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+@media (min-width: 320px) {
+  .about__header {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__header {
+    font-size: 2.2rem;
+  }
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 5vw;
+}
+@media screen and (min-width: 1279px) {
+  .about__content {
+    margin: auto;
+    width: 60%;
+  }
+}
+.about__image {
+  margin: 0 5vw 24px 5vw;
+  width: 288px;
+  height: 145px;
+}
+@media screen and (min-width: 768px) {
+  .about__image {
+    width: 97%;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .about__image {
+    width: 100%;
+    height: 70%;
+  }
+}
+.about__slogan {
+  font-family: "Avenir Bold";
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+@media (min-width: 320px) {
+  .about__slogan {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__slogan {
+    width: 93%;
+    font-size: 1.5rem;
+  }
+}
+.about__slogan--author {
+  align-self: flex-start;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 24px;
+  font-family: "Avenir Bold";
+}
+.about__article {
+  margin-bottom: 16px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.about__article--title {
+  font-family: "Avenir Bold";
+}
+.about__article--body {
+  display: flex;
+  font-family: "Avenir Regular";
+  font-size: 0.76rem;
+  line-height: 1.14rem;
+  margin-bottom: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #323232;
+  text-decoration: none;
+}
+.header__logo {
+  display: block;
+  height: 50%;
+  padding: 8px 0;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 100%;
+}
+.header__list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 22px;
+  width: 50vw;
+  font-size: 14px;
+  color: #afafaf;
+  border-top: 5px solid #323232;
+  border-bottom: 5px solid #323232;
+}
+.header__list-item-text {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  font-family: "Avenir Regular";
+}
+.header__list-item--active {
+  color: white;
+}
+
+a:hover, a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 0 3.125vw;
+    justify-content: flex-start;
+  }
+  .header__logo {
+    display: flex;
+    height: auto;
+    margin-right: 56px;
+  }
+  .header__list {
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .header__list-item {
+    width: 80px;
+    margin-right: 56px;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+  .header {
+    padding: 0 12.5vw;
+  }
+}
+
+.hero {
+  height: 183px;
+  background-image: url(../../assets/Images/hero-bio.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero__layer {
+  position: absolute;
+  background-color: #323232;
+  width: 100%;
+  opacity: 0.5;
+  height: 100%;
+}
+.hero__bees {
+  margin-left: 16px;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+@media (min-width: 320px) {
+  .hero {
+    font-size: 2rem;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    font-size: 3.75rem;
+    line-height: 70px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero {
+    font-size: 4.2rem;
+    line-height: 80px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=bio.css.map */

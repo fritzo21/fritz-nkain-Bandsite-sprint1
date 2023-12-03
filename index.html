@@ -13,49 +13,55 @@
 
 <body>
 	<header class="header">
-		<nav class="navbar">
-			<div class="navbar__title">
-				<a class="Band__logo" href="index.html"><img src="./assets/Logo/Logo-bandsite.svg" alt="Band__logo"></a>
-				<div class="navbar__content">
-					<a class="navbar__content-links" href="./index.html">Biography</a>
-					<a class="navbar__content-links" href="/index.html">Photo Galery</a>
-				</div>
+		<a class="header__logo" href="index.html"><img src="./assets/Logo/Logo-bandsite.svg" alt="Band__logo"></a>
+		<nav class="header__list">	
+			<div class="header__list-item header__list-item--active">
+				<h2><a class="header__list-item-text header__list-item--active" href="./index.html">Biography</a></h2>				
+			</div>
+			<div class="header__list-item">
+				<h2><a class="header__list-item-text" href="/index.html">Shows</a></h2>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<div class="hero">
+		<section class="hero">
+			<div class="hero__layer"></div>
 			<h1 class="hero__bees">The Bees Knees</h1>
-		</div>
+		</section>
 		<div class="intro__musicians">
-			<h1>About the Musicians</h1>
+			
 		</div>
 
-		<div class="about">
-			<div class="about__img"><img alt=" Bees Knees" src="./assets/Images/band.jpg"></div>
-			<p class="about__slogan">" We push each other to be the best. It's not uncommon for one of us to say'this needs to be better, back to the drawing board'"</p>
-			<p class="about-slogan-author">Bryan Teddy, lead vocalist of the Bees Knees</p>
-			<article class="article">
-				<p class="article__title">The Bees Knees</p>
-				<p class="article__body">The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts (The Elephant In The Room, One Trick Pony, The Cat’s Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.</p>
-				<p class="article__body">From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band’s original and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as “The Hive” and are drawn to their candid and authentic performances on stage. Looking forward to touring in the future, The Bees Knees are currently recording their second studio album, looking to be released in late 2021.</p>
-		</div>	
-        <div class="galery__container">	
-            <div class="galery">
-                <p class="galery__title">The Galery</p>
-                <div class="galery__container">
-                    <p class="galery__container--imgs"><img alt="Bees Knees" src="./assets/Images/Photo-gallery-1.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-2.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-3.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-4.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-5.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-6.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-7.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-8.jpg"></p>
-                    <p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-9.jpg"></p>
-                </div>
-            </div>
+		<section class="about">
+			<h1 class="about__header">About the Musicians</h1>
+			<div class="about__content">
+				<img class="about__img" alt=" Bees Knees" src="./assets/Images/band.jpg">
+				<p class="about__slogan">" We push each other to be the best. It's not uncommon for one of us to say'this needs to be better, back to the drawing board'"</p>
+				<p class="about__slogan--author">Bryan Teddy, lead vocalist of the Bees Knees</p>
+				<article class="about__article">
+					<h3 class="about__article--title">The Bees Knees</h3>
+					<p class="about__article--body">The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts (The Elephant In The Room, One Trick Pony, The Cat’s Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.</p>
+					<p class="about__article--body">From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band’s original and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as “The Hive” and are drawn to their candid and authentic performances on stage. Looking forward to touring in the future, The Bees Knees are currently recording their second studio album, looking to be released in late 2021.</p>
+				</article>
+			</div>
+		</section>
+
+        <div class="galery">	
+            <!-- <div class="galery__title"> -->
+			<p class="galery__title">The Galery</p>
+			<div class="galery__container">
+				<p class="galery__container--imgs"><img alt="Bees Knees" src="./assets/Images/Photo-gallery-1.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-2.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-3.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-4.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-5.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-6.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-7.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-8.jpg"></p>
+				<p class="galery__container--imgs"><img alt=" Bees Knees" src="./assets/Images/Photo-gallery-9.jpg"></p>
+			</div>
+            <!-- </div> -->
 		</div>
 	</main>
 	<footer class="footer">
