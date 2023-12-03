@@ -237,4 +237,145 @@ a:hover, a:active {
     line-height: 80px;
     width: 100%;
   }
+}
+
+.nav {
+  color: white;
+}
+@media (min-width: 320px) {
+  .nav {
+    font-family: "Avenir Regular";
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+  }
+}
+.nav__links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Avenir Demi Bold";
+}
+@media screen and (min-width: 768px) {
+  .nav__links {
+    height: 100%;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.nav__link {
+  list-style-type: none;
+  width: 50%;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    margin-right: 30%;
+  }
+}
+.nav__link:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 1s;
+}
+.nav__link--active {
+  padding-bottom: 15px;
+  border-bottom: 4px solid white;
+}
+@media screen and (min-width: 768px) {
+  .nav__link--active {
+    margin-right: 30%;
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .nav__link--active {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .nav__link {
+    margin-right: 56px;
+    font-size: 13px;
+  }
+}
+
+.navbar__content-links {
+  border-right: 200px;
+}
+
+.hero {
+  height: 183px;
+  background-image: url(../../assets/Images/hero-bio.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.gallery {
+  padding: 32px 5vw;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.gallery__title {
+  font-family: "AvenirNextBold";
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.gallery__images {
+  width: 288px;
+  height: auto;
+  align-self: center;
+}
+.gallery__image {
+  margin-bottom: 16px;
+  width: 288px;
+  height: 162px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 32px 3.125vw;
+  }
+  .gallery__images {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 720px;
+    height: 426px;
+    align-content: space-between;
+  }
+  .gallery__img {
+    margin: 0;
+    width: 224px;
+    height: 126px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .gallery {
+    padding: 32px 12.5vw;
+  }
+  .gallery__images {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 1080px;
+    height: 627px;
+    align-content: space-between;
+  }
+  .gallery__img {
+    width: 344px;
+    height: 193px;
+  }
 }/*# sourceMappingURL=bio.css.map */

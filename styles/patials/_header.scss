@@ -83,7 +83,7 @@ a:hover, a:active{
 
 .header{
 
-    @include deskstop{
+    @include desktop{
         padding: 0 12.5vw;
     }
 }
@@ -123,7 +123,7 @@ a:hover, a:active{
          line-height: 70px;
      }
 
-     @include deskstop{
+     @include desktop{
          font-size: 4.2rem;
          line-height: 80px;
          width: 100%;

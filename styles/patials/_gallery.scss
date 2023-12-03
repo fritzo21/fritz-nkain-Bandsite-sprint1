@@ -1,3 +1,6 @@
+
+@import "./variables";
+
 .gallery {
     padding: 32px 5vw;
     background-color: $alabaster;
@@ -6,49 +9,47 @@
     align-items: flex-start;
   
     &__title {
-    //   font-family: "Avenir Bold";
+      font-family: "AvenirNextBold";
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 24px;
     }
     
-    &__container {
+    &__images {
       width: 288px;
       height: auto;
       align-self: center;
-
-      &__imgs {
-        margin-bottom: 16px;
-        width: 288px;
-        height: 162px;
-    
-      }     
     }
-    
+    &__image {
+      margin-bottom: 16px;
+      width: 288px;
+      height: 162px;
+  
+    }
   }
   
   @include tablet {
     .gallery {
       padding: 32px 3.125vw;
   
-      &__title {
-        @include desk__h1;
-      }
+    //   &__title {
+    //     @include desk__h1;
+    //   }
   
-      &__container {
+      &__images {
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
         width: 720px;
         height: 426px;
         align-content: space-between;
-
-        &__image {
-            margin: 0;
-            width: 224px;
-            height: 126px;
-          }
-      }     
+      }
+  
+      &__img {
+        margin: 0;
+        width: 224px;
+        height: 126px;
+      }
     }
   }
   
@@ -56,7 +57,7 @@
     .gallery {
       padding: 32px 12.5vw;
   
-      &__container {
+      &__images {
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
@@ -65,7 +66,7 @@
         align-content: space-between;
       }
   
-      &__imgs {
+      &__img {
         width: 344px;
         height: 193px;
       }

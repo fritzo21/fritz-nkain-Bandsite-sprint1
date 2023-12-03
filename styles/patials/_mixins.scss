@@ -19,14 +19,14 @@
         
     }
 }
-@mixin table-break{
+@mixin tablet-break{
     @media screen and (min-width: $tablet-break) {
         @content;
         
     }
 }
 
-@mixin deskstop{
+@mixin desktop{
     @media screen and ( min-width: $desktop) {
         @content;
         
