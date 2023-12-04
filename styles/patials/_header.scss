@@ -11,51 +11,50 @@
     height: 80px;
     background-color: $blk;
     text-decoration: none;
-
-   &__logo{
-    display:block;
-    height: 50%;
-    padding: 8px 0;
-   }
-   &__list{
-    display: flex;
-    flex-direction: row;
-    height: 50%;
-    width: 100%;
-   }
-   &__list-item{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
-    line-height: 22px;
-    width: 50vw;
-    font-size: 14px;
-    color: $silver;
-    border-top: 5px solid $blk;
-    border-bottom: 5px solid $blk;
-
-    &-text{
+  
+    &__logo {
+      display: block;
+      height: 50%;
+      padding: 8px 0;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      height: 50%;
+      width: 100%;
+    }
+    &__list-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      line-height: 22px;
+      width: 50vw;
+      font-size: 14px;
+      color: $silver;
+      border-top: 5px solid $blk;
+      border-bottom: 5px solid $blk;
+  
+      &-text {
         font-size: 14px;
         line-height: 22px;
         font-weight: normal;
         font-family: "Avenir Regular";
-    }
-    &--active{
+      }
+      &--active {
         color: $white;
-        
+      }
     }
-   }
-}
-
-a:hover, a:active{
+  }
+  
+  a:hover,
+  a:active {
     color: $white;
     border-bottom: 5px solid $white;
-}
-
-.header{ 
-
+  }
+  
+  .header {
     @include tablet {
       flex-direction: row;
       padding: 0 3.125vw;
@@ -73,61 +72,16 @@ a:hover, a:active{
       }
   
       &__list-item {
-        // @include desk__h2;
+        font-family: "Avenir Bold";
         width: 80px;
         margin-right: 56px;
       }
     }
-    
-}
-
-.header{
-
-    @include desktop{
-        padding: 0 12.5vw;
+  }
+  .header {
+    @include desktop {
+      padding: 0 12.5vw;
     }
-}
+  }
 
-// Hero section
-
-.hero{
-    height: 183px;
-    background-image: url(../../assets/Images/hero-bio.jpg);
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    
-    &__layer {
-         position: absolute;
-         background-color: $blk;
-         width: 100%;
-         opacity: 0.5;
-         height: 100%;
-     }
-    &__bees{
-         margin-left: 16px;
-         color: $white;
-         font-size: 1.5rem;
-         line-height: 32px;
-     }
-
-     @include mobile{
-         font-size: 2rem;
-         height: 300px;
-     }
-
-     @include tablet{
-        // padding-left: 24px;
-         font-size: 3.75rem;
-         line-height: 70px;
-     }
-
-     @include desktop{
-         font-size: 4.2rem;
-         line-height: 80px;
-         width: 100%;
-        //  padding-left: 180px;
-     }
- }
-
+  

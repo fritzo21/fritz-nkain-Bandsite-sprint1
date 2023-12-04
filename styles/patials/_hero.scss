@@ -1,10 +1,43 @@
-@use "./variables" ;
+@import "./variables";
 
-.hero{
+.hero {
     height: 183px;
     background-image: url(../../assets/Images/hero-bio.jpg);
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     position: relative;
-}
+  
+    &__layer {
+      position: absolute;
+      background-color: $blk;
+      width: 100%;
+      opacity: 0.5;
+      height: 100%;
+    }
+    &__bees {
+      margin-left: 16px;
+      color: $white;
+      font-size: 1.5rem;
+      line-height: 32px;
+    }
+  
+    @include mobile {
+      font-size: 2rem;
+      height: 300px;
+    }
+  
+    @include tablet {
+      padding-left: 24px;
+      font-size: 3.75rem;
+      line-height: 70px;
+    }
+  
+    @include desktop {
+      font-size: 4.2rem;
+      line-height: 80px;
+      width: 100%;
+      //  padding-left: 180px;
+    }
+  }
+  

@@ -2,73 +2,72 @@
 
 .nav {
     color: $white;
-
+  
     @include mobile {
-        font-family: "Avenir Regular";
-        display: flex;
-        align-items: center;
-        margin-left: 10%;
+      font-family: "Avenir Regular";
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
     }
-
+  
     &__links {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: "Avenir Demi Bold";
+  
+      @include tablet {
+        height: 100%;
+        line-height: 80px;
         display: flex;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        font-family: "Avenir Demi Bold";
-
-        @include tablet {
-            height: 100%;
-            line-height: 80px;
-            display: flex;
-            justify-content: space-around;
-        }
+        justify-content: space-around;
+      }
     }
-
+  
     &__link {
-        list-style-type: none;
-        width: 50%;
-        font-size: 1.1rem;
-
+      list-style-type: none;
+      width: 50%;
+      font-size: 1.1rem;
+  
+      @include tablet {
+        margin-right: 30%;
+      }
+  
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 1s;
+      }
+  
+      &--active {
+        padding-bottom: 15px;
+        border-bottom: 4px solid $white;
+  
         @include tablet {
-            margin-right: 30%;
+          margin-right: 30%;
+          padding-right: 7%;
         }
-
-        &:hover {
-            cursor: pointer;
-            opacity: 0.5;
-            transition: 1s;
-        }
-
-        &--active {
-            padding-bottom: 15px;
-            border-bottom: 4px solid $white;
-
-            @include tablet {
-                margin-right: 30%;
-                padding-right: 7%;
-            }
-
-            @include desktop{
-                padding: 0;
-            }
-
-        }
-
-        @include tablet {
-            font-size: 1rem;
-        }
-
+  
         @include desktop {
-            margin-right: 56px;
-            font-size: 13px;
+          padding: 0;
         }
+      }
+  
+      @include tablet {
+        font-size: 1rem;
+      }
+  
+      @include desktop {
+        margin-right: 56px;
+        font-size: 13px;
+      }
     }
-}
-
-.navbar__content{
-    
-    &-links{
-        border-right: 200px;
+  }
+  
+  .navbar__content {
+    &-links {
+      border-right: 200px;
     }
-}
+  }
+  

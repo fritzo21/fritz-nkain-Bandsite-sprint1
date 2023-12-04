@@ -1,0 +1,161 @@
+@import "./variables";
+.footer {
+    padding: 48px 5vw;
+    background-color: $blk;
+    color: $white;
+    font-family: "Avenir Regular";
+    font-weight: 100;
+    font-size: 0.76rem;
+    line-height: 1.14rem;
+    position: fixed;
+  
+    &__first-row {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 32px;
+    }
+    &__title {
+      font-family: "Avenir Bold";
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0;
+      padding-bottom: 32px;
+    }
+  
+    &__icon {
+      margin-right: 32px;
+    }
+  
+    &__logo {
+      display: none;
+      float: right;
+    }
+  
+    &__second-row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  
+    &__name {
+      display: flex;
+      flex-direction: column;
+      font-family: "Avenir Demi ";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
+  
+    &__address {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      line-height: 18px;
+      margin-bottom: 32px;
+    }
+  
+    &__email {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__copyright {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @include tablet {
+    .footer {
+      padding: 48px 3.125vw;
+      font-size: 14px;
+      line-height: 22px;
+  
+      &__first-row {
+        flex-direction: row;
+        padding-bottom: 0;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin-bottom: 48px;
+      }
+  
+      &__title {
+        width: 224px;
+        margin-right: 24px;
+        padding-bottom: 0;
+        font-size: 24px;
+        line-height: 32px;
+      }
+  
+      &__icon-group {
+        margin-left: 24px;
+      }
+  
+      &__logo {
+        display: inline-block;
+        // float:inline-start;
+        margin-top: 8px;
+        width: 120px;
+        height: 24px;
+      }
+  
+      &__second-row {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+      }
+  
+      &__contact {
+        width: 224px;
+        margin-right: 24px;
+        margin-bottom: 0;
+      }
+  
+      &__name {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+      }
+  
+      &__address {
+        margin-bottom: 32px;
+      }
+  
+      &__copyright {
+        flex-direction: row;
+      }
+    }
+  }
+  
+  @include desktop {
+    .footer {
+      position: relative;
+      padding: 48px 12.5vw;
+  
+      &__title {
+        width: 252px;
+      }
+  
+      &__icon-group {
+        justify-self: flex-start;
+        margin-left: 0;
+      }
+  
+      &__second-row {
+        justify-content: flex-start;
+      }
+  
+      &__contact {
+        width: 252px;
+        margin-right: 24px;
+      }
+    }
+  }
+  

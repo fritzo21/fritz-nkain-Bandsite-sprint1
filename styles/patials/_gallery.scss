@@ -1,6 +1,5 @@
 
 @import "./variables";
-
 .gallery {
     padding: 32px 5vw;
     background-color: $alabaster;
@@ -9,22 +8,26 @@
     align-items: flex-start;
   
     &__title {
-      font-family: "AvenirNextBold";
+      font-family: "Avenir Bold";
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 24px;
     }
-    
+  
     &__images {
+      display: flex;
+      justify-content: space-around;
       width: 288px;
       height: auto;
-      align-self: center;
+      // align-self: center;
     }
-    &__image {
-      margin-bottom: 16px;
-      width: 288px;
-      height: 162px;
   
+    &__imgs {
+      margin: 16px;
+      width: 288px;
+      max-height: 162px;
+      border: 10px;
+      border-color: white;
     }
   }
   
@@ -32,23 +35,26 @@
     .gallery {
       padding: 32px 3.125vw;
   
-    //   &__title {
-    //     @include desk__h1;
-    //   }
-  
+      &__title {
+        font-size: 36px;
+        line-height: 44px;
+      }
       &__images {
         display: flex;
         flex-flow: wrap;
-        justify-content: space-between;
+        gap: 10px;
+        justify-content: space-evenly;
         width: 720px;
         height: 426px;
         align-content: space-between;
       }
   
-      &__img {
+      &__imgs {
         margin: 0;
+        flex: 0 0 calc(33.33% - 10px);
         width: 224px;
         height: 126px;
+        box-sizing: border-box;
       }
     }
   }
@@ -66,9 +72,10 @@
         align-content: space-between;
       }
   
-      &__img {
+      &__imgs {
         width: 344px;
         height: 193px;
       }
     }
   }
+  
